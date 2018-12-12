@@ -1,0 +1,11 @@
+package com.LeShine.com;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月21日 下午3:29:32
+ * @version: v1.0.0
+ * @explain:
+ */
+public class ThreadTest extends Thread {
+
+}

@@ -1,0 +1,13 @@
+package com.LeShine.test1;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月21日 下午9:04:28
+ * @version: v1.0.0
+ * @explain:
+ */
+public class WaitNotify {
+	public static void main(String[] args) {
+
+	}
+}

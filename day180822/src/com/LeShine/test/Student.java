@@ -1,0 +1,97 @@
+package com.LeShine.test;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 上午10:29:40
+ * @version: v1.0.0
+ * @explain:
+ */
+public class Student {
+	private String name;
+	protected int age;
+	public char sex;
+	private String phone;
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", sex=" + sex + ", phone=" + phone + "]";
+	}
+
+	/**
+	 * 
+	 */
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param name
+	 */
+	public Student(String name) {
+		super();
+		this.name = name;
+	}
+
+	/**
+	 * @param age
+	 * @param sex
+	 * @param phone
+	 */
+	private Student(int age, char sex, String phone) {
+		super();
+		this.age = age;
+		this.sex = sex;
+		this.phone = phone;
+	}
+
+	/**
+	 * @param sex
+	 */
+	Student(char sex) {
+		super();
+		this.sex = sex;
+	}
+
+	public void show() {
+		System.out.println("无参公共方法");
+	}
+
+	private void show(String name) {
+
+		System.out.println(this.name + "和" + name + "有参私有方法");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public char getSex() {
+		return sex;
+	}
+
+	public void setSex(char sex) {
+		this.sex = sex;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+}

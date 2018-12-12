@@ -1,0 +1,22 @@
+package com.LeShine.test;
+
+import java.sql.ResultSet;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月23日 下午6:38:48
+ * @version: v1.0.0
+ * @explain:
+ */
+public class JDBCTest {
+	public static void main(String[] args) {
+		Connection conn = null;
+		Statement sta = null;
+		ResultSet rSet = null;
+		String connString = "jdbc:mysql://127.0.0.1:3306/test?" + "user=root&password=Mysql007&characterEncoding=utf8";
+
+	}
+}

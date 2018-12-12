@@ -1,0 +1,36 @@
+package com.LeShine.com;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月20日 下午8:35:10
+ * @version: v1.0.0
+ * @explain:截取链表
+ */
+public class LinkedListTest {
+	public static void main(String[] args) {
+		LinkedList<String> linLIst = new LinkedList<String>();
+		linLIst.add("dfds");
+		linLIst.add("ddfdfds");
+		linLIst.add("dfghrfgds");
+		linLIst.add("df444ds");
+		linLIst.add("d47eee4fds");
+		linLIst.add("5415445");
+		Iterator<String> it = linLIst.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.next());
+		}
+
+		List<String> ls = linLIst.subList(1, 5);// 1<=index<5
+		System.out.println(ls);
+		System.out.println(linLIst.indexOf("5415445"));
+		linLIst.set(5, "22020000000");
+		
+		while (it.hasNext()) {
+			System.out.println(it.next());
+		}
+	}
+}

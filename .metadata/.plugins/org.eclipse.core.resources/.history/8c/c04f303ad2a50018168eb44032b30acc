@@ -1,0 +1,42 @@
+package com.LeShine.test;
+
+import java.lang.reflect.Constructor;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 上午11:22:56
+ * @version: v1.0.0
+ * @explain:反射获取类构造函数
+ */
+public class ReflectionTest1 {
+	public static void main(String[] args) {
+		System.out.println("输出public构造函数");
+		try {
+			Class stuClass = Class.forName("com.LeShine.test.Student");
+			// getConstuctors()返回一个包含构造函数的数组
+			Constructor[] constructors = stuClass.getConstructors();
+			for (Constructor c : constructors) {
+				System.out.println(c);
+			}
+		} catch (ClassNotFoundException | SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Class cons2;
+		try {
+			cons2 = Class.forName("com.LeShine.test.Student");
+			System.out.println(cons2);
+			System.out.println("输出所有构造函数");
+			Constructor[] stuAllCons = cons2.getDeclaredConstructors();
+			for (Constructor constructor : stuAllCons) {
+				System.out.println(constructor);
+			}
+			Constructor stuClass = cons2.getDeclaredConstructor(String.class);
+
+		} catch (ClassNotFoundException | SecurityException | NoSuchMethodException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+}

@@ -1,0 +1,13 @@
+package com.LeShine.test2;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 下午8:59:09
+ * @version: v1.0.0
+ * @explain:
+ */
+public class Student {
+private String name;
+private int age;
+
+}

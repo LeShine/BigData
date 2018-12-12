@@ -1,0 +1,58 @@
+package com.LeShine.test;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月23日 下午3:22:05
+ * @version: v1.0.0
+ * @explain:文件流拷贝文件
+ */
+public class CopyFileTest {
+	public static void main(String[] args) throws FileNotFoundException {
+		// 新建拷贝文件对象
+		System.out.println("请输入要拷贝的文件");
+		Scanner scanner = new Scanner(System.in);
+		String sourceFile = scanner.nextLine();
+		System.out.println("请输入目标文件绝对路径");
+		String targetFile = scanner.nextLine();
+		File sFile = new File(sourceFile);
+		File tFile = new File(targetFile);
+		// 创建文件流
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(sFile)));
+		StringBuffer stringBuffer = new StringBuffer();
+		while (true) {
+			try {
+				if (bufferedReader != null) {
+					stringBuffer.append(bufferedReader.readLine());
+				} else {
+					break;
+				}
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} finally {
+
+			}
+		}
+
+		try {
+			BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(tFile));
+			bufferedWriter.write(stringBuffer.toString());
+			bufferedWriter.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+}

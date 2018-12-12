@@ -1,0 +1,39 @@
+package com.LeShine.test;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 上午10:29:40
+ * @version: v1.0.0
+ * @explain:
+ */
+public class Student {
+	private String name;
+	protected int age;
+	char sex;
+	private String phone;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public char getSex() {
+		return sex;
+	}
+	public void setSex(char sex) {
+		this.sex = sex;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+}

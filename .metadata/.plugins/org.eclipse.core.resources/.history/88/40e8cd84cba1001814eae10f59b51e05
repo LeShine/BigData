@@ -1,0 +1,61 @@
+package com.LeShine.test;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月17日 上午10:03:50
+ * @version: v1.0.0
+ */
+public class stringTest {
+	public static void main(String[] args) {
+		function1();
+		function2();
+		function3();
+	}
+
+	public static void function1() {
+		String str = "dffdfd.text";
+		System.out.println(str.length());// 长度
+		System.out.println(str.substring(1, 3));// 从1截取2个到3
+		System.out.println(str.substring(2));// 从2截取到最后
+		System.out.println(str.endsWith("fd"));// 是否以x结尾
+		System.out.println(str.endsWith(".text"));
+		System.out.println(str.contains(".text"));// 是否包含x
+		System.out.println(str.contains(".tt"));// 是否包含x
+		System.out.println(str.indexOf("f"));// cha第一次出现的索引
+
+		/*
+		 * 11 ff fdfd.text false true true false
+		 */
+
+	}
+
+	public static void function2() {
+		String str = "abcdef";
+		byte[] ch = str.getBytes();
+		System.out.println(ch);// 数组地址
+		for (int i = 0; i < ch.length; i++) {
+			System.out.println(ch[i]);
+		}
+
+		char[] cs = str.toCharArray();
+		System.out.println(cs);// 字符数组
+
+		// 数组相关功能，字节相关查询编码表，字符相关不查询编码表
+	}
+
+	public static void function3() {
+		String st1 = "abc";
+		String st2 = "abc";
+		String st3 = "Abc";
+		System.out.println(st1.toString());
+		System.out.println(st1 == st2); //
+		System.out.println(st1.equals(st2));// string 的equals方法重写了，比较的是字符串的没一个字符
+		System.out.println(st1.equalsIgnoreCase(st3));// 忽略大小写
+
+	}
+	
+	public static void function4(){
+		String st1 = new String("abc");
+		String st2 = "abc";
+	}
+}

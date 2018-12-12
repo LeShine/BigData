@@ -1,0 +1,24 @@
+package com.LeShine.test;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月21日 下午4:53:30
+ * @version: v1.0.0
+ * @explain:
+ */
+public class ThreadTest {
+	@SuppressWarnings("static-access")
+	public static void main(String[] args) {
+		ThRunable thru = new ThRunable();
+		Thread thread = new Thread(thru);
+		thread.start();
+		for (int j = 0; j < 10; j++) {
+			long id = thread.currentThread().getId();
+			String name = thread.currentThread().getName();
+			System.out.println( name + id + ":" + j);
+		}
+
+		// Thread thr = Thread.currentThread();
+		// System.out.println(thr);
+	}
+}

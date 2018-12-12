@@ -1,0 +1,30 @@
+package com.LeShine.test;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月21日 下午6:12:51
+ * @version: v1.0.0
+ * @explain:
+ */
+public class Ticket implements Runnable {
+	private int total;
+
+	Ticket(int ticket) {
+		this.total = ticket;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Runnable#run()
+	 */
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while (total > 0) {
+			total--;
+			String name = Thread.currentThread().getName();
+			System.out.println(name + "售出一张票，还剩" + total + "张");
+		}
+	}
+}

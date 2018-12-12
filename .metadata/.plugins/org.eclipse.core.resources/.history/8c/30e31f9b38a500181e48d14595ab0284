@@ -1,0 +1,27 @@
+package com.LeShine.test;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月21日 下午7:31:25
+ * @version: v1.0.0
+ * @explain:
+ */
+public class SaleTicket {
+	public static void main(String[] args) {
+		Ticket ticket = new Ticket(100);
+		Thread thread = new Thread(ticket);
+		Thread thread2 = new Thread(ticket);
+		thread.setName("窗口1");
+		thread2.setName("窗口2");
+		// thread2.start();
+		// thread.start();
+
+		// 线程优先级
+		int priority = thread.getPriority();
+		System.out.println(priority);
+		System.out.println(thread.MAX_PRIORITY);
+		System.out.println(thread.MIN_PRIORITY);
+		thread.setPriority(9);
+
+	}
+}

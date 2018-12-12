@@ -1,0 +1,21 @@
+package com.LeShine.test2;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 下午8:22:23
+ * @version: v1.0.0
+ * @explain:
+ */
+public class BufferReaderTest {
+	public static void main(String[] args) {
+
+	}
+
+	/**
+	 * 
+	 */
+	private static void bufReaders() {
+		// TODO Auto-generated method stub
+
+	}
+}

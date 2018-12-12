@@ -1,0 +1,16 @@
+INDEX VERSION 1.130+E:\bigdata\exercise\.metadata\.plugins\org.eclipse.jdt.core
+4195126403.index
+1796334814.index
+2529248127.index
+3730318014.index
+1299148495.index
+3886621666.index
+471258184.index
+2096197162.index
+1323777839.index
+2841580072.index
+4181277921.index
+1038510879.index
+4118114685.index
+2233435634.index
+4061705572.index

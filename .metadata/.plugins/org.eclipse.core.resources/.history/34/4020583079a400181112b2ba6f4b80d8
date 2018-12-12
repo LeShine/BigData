@@ -1,0 +1,13 @@
+package com.LeShine.com;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月20日 下午8:59:20
+ * @version: v1.0.0
+ * @explain:treeSet默认升序
+ */
+public class TreeSetTest {
+	public static void main(String[] args) {
+
+	}
+}

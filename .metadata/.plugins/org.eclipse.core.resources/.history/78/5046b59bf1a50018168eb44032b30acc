@@ -1,0 +1,22 @@
+package com.LeShine.test2;
+
+import java.io.File;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 下午5:29:39
+ * @version: v1.0.0
+ * @explain:
+ */
+public class FileIO {
+	public static void main(String[] args) {
+		// 根据文件路径创建文件对象
+		File file = new File("c:\\a.txt");
+		System.out.println(file);
+		System.out.println(file.isDirectory());// 判断对象是否为目录
+		System.out.println(file.exists());
+		File file2 = new File("c:\\");
+		System.out.println(file2.isDirectory());
+
+	}
+}

@@ -1,0 +1,23 @@
+package com.LeShine.test;
+
+import java.io.File;
+import java.util.Scanner;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月23日 下午3:22:05
+ * @version: v1.0.0
+ * @explain:文件流拷贝文件
+ */
+public class CopyFileTest {
+	public static void main(String[] args) {
+		// 新建拷贝文件对象
+		System.out.println("请输入要拷贝的文件");
+		Scanner scanner = new Scanner(System.in);
+		String sourceFile = scanner.nextLine();
+		System.out.println("请输入目标文件绝对路径");
+		String targetFile = scanner.nextLine();
+		File sFile = new File(sourceFile);
+		File tFile = new File(targetFile);
+	}
+}

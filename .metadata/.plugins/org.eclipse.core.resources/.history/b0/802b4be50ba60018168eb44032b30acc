@@ -1,0 +1,14 @@
+package com.LeShine.test2;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 下午8:58:42
+ * @version: v1.0.0
+ * @explain:序列化与反序列化
+ */
+public class ObjectOutputTest {
+	public static void main(String[] args) {
+		Student student = new Student("LeShine",18);
+		
+	}
+}

@@ -1,0 +1,29 @@
+package com.LeShine.test;
+
+import java.lang.reflect.Field;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月22日 下午3:27:46
+ * @version: v1.0.0
+ * @explain:通过反射获取类属性
+ */
+public class ReflectionAttr {
+	public static void main(String[] args) {
+		try {
+			Class stuClas = Class.forName("com.LeShine.test.Student");
+			Field[] fields = stuClas.getFields();
+			for (Field f : fields) {
+				System.out.println(f);
+			}
+			Field[] declaredFields = stuClas.getDeclaredFields();
+			for(Field f:declaredFields){
+				System.out.println(declaredFields);
+			}
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

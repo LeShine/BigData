@@ -1,0 +1,13 @@
+package com.LeShine.test;
+
+import com.sun.corba.se.spi.orb.StringPair;
+
+/**
+ * @author LeShine
+ * @date: 2018年8月17日 上午11:31:33
+ * @version: v1.0.0
+ * @explain:获取字符串中大小写及数字的个数
+ */
+public class getCountStr {
+	public static void main(String[] args){}
+}
